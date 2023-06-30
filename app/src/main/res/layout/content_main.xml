@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,4 +7,13 @@
     android:padding="@dimen/main_padding"
     tools:context=".MainActivity">
 
+<!--  tools:layout="" нужен для отображения layout фрагмента во время работы в Android Studio  -->
+<!--  android.name="" нужен для связи виджета FragmentContainerView с классом обработки фрагмента ShareFragment  -->
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/share_qr_fragment"
+        android:name="ru.myitschool.lab23.MainActivity$ShareFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_share" />
 </LinearLayout>
