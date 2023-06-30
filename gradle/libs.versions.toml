@@ -1,7 +1,7 @@
 [versions]
 accompanist = "0.27.0"
 androidDesugarJdkLibs = "1.2.0"
-androidGradlePlugin = "7.4.2"
+androidGradlePlugin = "7.3.0"
 androidxActivity = "1.6.1"
 androidxAppCompat = "1.6.1"
 androidxComposeBom = "2022.11.00"
@@ -134,7 +134,7 @@ android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", ver
 kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
 
 [plugins]
-android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-application = { id = "com.android.application", version = "7.3.0" }
 android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
 android-test = { id = "com.android.test", version.ref = "androidGradlePlugin" }
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
